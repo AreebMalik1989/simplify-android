@@ -1,0 +1,1 @@
+include ':app', ':simplify-resources', ':simplify-about'
