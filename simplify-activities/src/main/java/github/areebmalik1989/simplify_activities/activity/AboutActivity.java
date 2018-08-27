@@ -1,18 +1,17 @@
-package github.areebmalik1989.simplify_about;
+package github.areebmalik1989.simplify_activities.activity;
 
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import github.areebmalik1989.simplify_activities.R;
+import github.areebmalik1989.simplify_activities.activity.iActivity.IAboutActivity;
 import github.areebmalik1989.simplify_resources.SimplifyBitmap;
 import github.areebmalik1989.simplify_resources.SimplifyNavigationBar;
-import github.areebmalik1989.simplify_resources.SimplifyPackage;
 import github.areebmalik1989.simplify_resources.SimplifyStatusBar;
 
-public class AboutActivity extends AppCompatActivity implements IAboutActivity{
+public class AboutActivity extends AppCompatActivity implements IAboutActivity {
 
     private Bundle bundle;
 

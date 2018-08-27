@@ -1,4 +1,4 @@
-package github.areebmalik1989.simplify_about;
+package github.areebmalik1989.simplify_activities.activity.iActivity;
 
 public interface IAboutActivity {
     String BUNDLE = "BUNDLE";

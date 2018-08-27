@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="github.areebmalik1989.simplify_about">
+    package="github.areebmalik1989.simplify_activities">
 
     <application>
         <activity
-            android:name=".AboutActivity"
+            android:name="github.areebmalik1989.simplify_activities.activity.AboutActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".activity.Notice"/>
     </application>
 
 </manifest>

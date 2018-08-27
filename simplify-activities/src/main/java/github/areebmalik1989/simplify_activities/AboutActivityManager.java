@@ -1,10 +1,12 @@
-package github.areebmalik1989.simplify_about;
+package github.areebmalik1989.simplify_activities;
 
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 
+import github.areebmalik1989.simplify_activities.activity.iActivity.IAboutActivity;
+import github.areebmalik1989.simplify_activities.activity.AboutActivity;
 import github.areebmalik1989.simplify_resources.SimplifyBitmap;
 
 public class AboutActivityManager {

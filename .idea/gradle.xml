@@ -9,8 +9,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/simplify-about" />
+            <option value="$PROJECT_DIR$/simplify-activities" />
             <option value="$PROJECT_DIR$/simplify-resources" />
+            <option value="$PROJECT_DIR$/simplify-views" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
