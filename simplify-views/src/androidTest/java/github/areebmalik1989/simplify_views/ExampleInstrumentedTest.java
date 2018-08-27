@@ -1,4 +1,4 @@
-package github.areebmalik1989.simplify_about;
+package github.areebmalik1989.simplify_views;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("github.areebmalik1989.simplify_about.test", appContext.getPackageName());
+        assertEquals("github.areebmalik1989.simplify_views.test", appContext.getPackageName());
     }
 }
