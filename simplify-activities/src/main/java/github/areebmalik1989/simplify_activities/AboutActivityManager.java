@@ -3,6 +3,7 @@ package github.areebmalik1989.simplify_activities;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 
 import github.areebmalik1989.simplify_activities.activity.iActivity.IAboutActivity;
@@ -17,20 +18,27 @@ public class AboutActivityManager {
         this.context = context;
     }
 
-    public void startActivity(String appName, String version, String versionCode,
-                              String developerName, String developerEmail, Bitmap appIcon){
+    public void startActivity(final String appName, final String version, final String versionCode,
+                              final String developerName, final String developerEmail, final int appIconId){
 
-        Bundle bundle = new Bundle();
-        bundle.putString(IAboutActivity.APP_NAME, appName);
-        bundle.putString(IAboutActivity.VERSION, version);
-        bundle.putString(IAboutActivity.VERSION_CODE, versionCode);
-        bundle.putString(IAboutActivity.DEVELOPER_NAME, developerName);
-        bundle.putString(IAboutActivity.DEVELOPER_EMAIL, developerEmail);
-        bundle.putByteArray(IAboutActivity.APP_ICON, SimplifyBitmap.bytesFromBitmap(appIcon));
+        new Thread(() -> {
 
-        Intent intent = new Intent(context, AboutActivity.class);
-        intent.putExtra(IAboutActivity.BUNDLE, bundle);
+            Bitmap bitmap = BitmapFactory.decodeResource(context.getResources(), appIconId);
 
-        context.startActivity(intent);
+            Bundle bundle = new Bundle();
+            bundle.putString(IAboutActivity.APP_NAME, appName);
+            bundle.putString(IAboutActivity.VERSION, version);
+            bundle.putString(IAboutActivity.VERSION_CODE, versionCode);
+            bundle.putString(IAboutActivity.DEVELOPER_NAME, developerName);
+            bundle.putString(IAboutActivity.DEVELOPER_EMAIL, developerEmail);
+            bundle.putSerializable(IAboutActivity.APP_ICON, SimplifyBitmap.bytesFromBitmap(bitmap));
+
+            Intent intent = new Intent(context, AboutActivity.class);
+            intent.putExtra(IAboutActivity.BUNDLE, bundle);
+
+            context.startActivity(intent);
+
+        }).start();
+
     }
 }
