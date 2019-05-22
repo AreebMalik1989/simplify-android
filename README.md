@@ -1,4 +1,4 @@
-# simplify-android
+# simplify-android (Depricated)
 Modules to 'simplify-android' programming
 
 ## License
